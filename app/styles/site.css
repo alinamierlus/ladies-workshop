@@ -29,42 +29,37 @@ ul {
 #content-region {
     position: absolute;
     left    : 0;
-    width   : 60%;
+    width   : 50%;
 }
 
 #places-region {
     height          : 100%;
     position        : absolute;
     right           : 0;
-    width           : 40%;
-}
-
-#places-region {
-    /*background-color: purple;*/
-}
-
-#places-region h2 {
-    color     : #373737;
-    margin    : 1em 0;
-    text-align: center;
+    width           : 50%;
 }
 
 #places-list {
-    float: right;
-    max-height: 100%;
-    margin: 1em 3em 0;
+    max-height: calc(100% - 6em);
     overflow: hidden;
+    padding: 3em 0;
     position: relative;
     word-spacing:0px;
-    width: 110%;
+    width: 99%;
     /*background-color: blue;*/
+}
+
+#places-list li {
+    padding-bottom: 4em;
+}
+
+#places-list li:last-child {
+    padding-bottom: 0;
 }
 
 .place {
     background-color: rgba(255,255,255,1);
-    margin: 0em 0 4em;
     min-height: 10em;
-    width: calc(100% - 8px);
     /*background-color: yellow;*/
 }
 
@@ -114,46 +109,4 @@ ul {
 
 .description {
     margin: 1em 0;
-}
-
-
-
-.place {
-    z-index: 3;
-}
-
-
-.curved-hz-2:before {
-    border-radius: 100px 100px 100px 100px / 10px 10px 10px 10px;
-    bottom: 0;
-    left: 10px;
-    right: 10px;
-    top: 0;
-}
-.curved:before {
-    border-radius: 10px 10px 10px 10px / 100px 100px 100px 100px;
-    bottom: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    left: 0;
-    right: 50%;
-    top: 10px;
-}
-.drop-shadow:before, .drop-shadow:after {
-    content: "";
-    position: absolute;
-    z-index: -2;
-}
-.drop-shadow:before, .drop-shadow:after {
-    content: "";
-    position: absolute;
-    z-index: -2;
-}
-.drop-shadow {
-    background: none repeat scroll 0 0 #FFFFFF;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    float: left;
-    margin: 2em 10px 4em;
-    padding: 1em;
-    position: relative;
-    width: 40%;
 }
