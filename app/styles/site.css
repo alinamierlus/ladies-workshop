@@ -33,14 +33,10 @@ ul {
 }
 
 #places-region {
-    background-color: rgba(255,255,255,0.5);
     height          : 100%;
     position        : absolute;
     right           : 0;
     width           : 40%;
-    /* Check HEX values in IE or check fallback with 1x1px transparernt image */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF)";
 }
 
 #places-region {
@@ -118,4 +114,46 @@ ul {
 
 .description {
     margin: 1em 0;
+}
+
+
+
+.place {
+    z-index: 3;
+}
+
+
+.curved-hz-2:before {
+    border-radius: 100px 100px 100px 100px / 10px 10px 10px 10px;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
+.curved:before {
+    border-radius: 10px 10px 10px 10px / 100px 100px 100px 100px;
+    bottom: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    left: 0;
+    right: 50%;
+    top: 10px;
+}
+.drop-shadow:before, .drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+.drop-shadow:before, .drop-shadow:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+.drop-shadow {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    float: left;
+    margin: 2em 10px 4em;
+    padding: 1em;
+    position: relative;
+    width: 40%;
 }

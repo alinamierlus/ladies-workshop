@@ -1,3 +1,5 @@
 $(function(){
-    $('#places-list').perfectScrollbar();
+    $('#places-list').mCustomScrollbar({
+        autoHideScrollbar: true
+    });
 });
