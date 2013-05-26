@@ -1,0 +1,3 @@
+$(function(){
+    $('#places-list').perfectScrollbar();
+});
