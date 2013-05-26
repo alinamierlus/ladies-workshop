@@ -1,0 +1,121 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+#wrapper {
+    position  : fixed;
+    background: url(/images/home.jpg) no-repeat center center fixed; 
+    height    : 100%;
+    width     : 100%;
+
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/home.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/home.jpg', sizingMethod='scale')";
+}
+
+#main-region {
+    height: 100%;
+}
+
+#content-region {
+    position: absolute;
+    left    : 0;
+    width   : 60%;
+}
+
+#places-region {
+    background-color: rgba(255,255,255,0.5);
+    height          : 100%;
+    position        : absolute;
+    right           : 0;
+    width           : 40%;
+    /* Check HEX values in IE or check fallback with 1x1px transparernt image */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#550000FF, endColorstr=#550000FF)";
+}
+
+#places-region {
+    /*background-color: purple;*/
+}
+
+#places-region h2 {
+    color     : #373737;
+    margin    : 1em 0;
+    text-align: center;
+}
+
+#places-list {
+    float: right;
+    max-height: 100%;
+    margin: 0 3em;
+    overflow: auto;
+    word-spacing:0px;
+    width: 110%;
+    /*background-color: blue;*/
+}
+
+.place {
+    background-color: rgba(255,255,255,1);
+    margin: 1em 0 3em;
+    min-height: 10em;
+    /*background-color: yellow;*/
+}
+
+.photo {
+    /*background-color: red;*/
+    display: inline-block;
+    height: 9em;
+    margin: 0.5em;
+    vertical-align: top;
+    width: 9em;
+}
+
+.content {
+    /*background-color: green;*/
+    display: inline-block;
+    margin: 0.5em 1.5em 0.5em 1em;
+    min-height: 9em;
+    /* calculate by breakpoints and in ems */
+    width: calc(100% - 12.5em);
+}
+
+.location {
+    margin-top: 1em;
+}
+
+.rating {
+    margin-top: 0.3em;
+}
+
+.star {
+    height: 1.7em;
+    line-height: 1.7em;
+    cursor: pointer;
+}
+
+.star:hover {
+    font-size: 1.3em;
+    height: 0.764705882em;
+    line-height: 0.764705882em;
+}
+
+.star:after {
+    content: '☆';
+}
+
+.star:hover:after{
+    content: '★';
+}
+
+.description {
+    margin: 1em 0;
+}
