@@ -97,23 +97,21 @@ ul {
 }
 
 .star {
+    display: inline-block;
+    cursor: pointer;
     height: 1.7em;
     line-height: 1.7em;
-    cursor: pointer;
+    width: 1.1em;
 }
 
-.star:hover {
+.hover {
     font-size: 1.3em;
     height: 0.764705882em;
     line-height: 0.764705882em;
 }
 
-.star:after {
-    content: '☆';
-}
-
-.star:hover:after{
-    content: '★';
+.active {
+    color: gold;
 }
 
 .description {
