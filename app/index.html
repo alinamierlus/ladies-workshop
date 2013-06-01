@@ -4,13 +4,16 @@
 	<meta charset="UTF-8">
 	<title>LadieJS</title>
 
-    <link rel="stylesheet" href="/styles/site.css">
-    <link rel="stylesheet" href="/vendor/jquery-customscrollbar/jquery-customscrollbar-2.8.2.css">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="vendor/jquery-customscrollbar/jquery-customscrollbar-2.8.2.css">
 
-    <script src="/vendor/jquery/jquery-2.0.1.js"></script>
-    <script src="/vendor/jquery-customscrollbar/jquery-customscrollbar-2.8.2.js"></script>
-
-    <script src="/javascripts/home.js"></script>
+    <script src="vendor/jquery/jquery-2.0.1.js"></script>
+    <script src="vendor/jquery-customscrollbar/jquery-customscrollbar-2.8.2.js"></script>
+    
+    <script src="javascripts/getData.js"></script>
+    <script src="javascripts/loadPlaces.js"></script>
+    <script src="javascripts/home.js"></script>
+    
 </head>
 <body>
     <div id="wrapper">
@@ -23,10 +26,10 @@
                         <li>
                             <div class="place">
                                 <div class="photo">
-                                    <img src="images/sagrada_familia_thumb.jpg" alt="Sagrada Familia">
+                                    <img src="images/nophoto.jpg" alt="image1" id="image1" title="image1">
                                 </div><div class="content">
-                                    <h3>La Sagrada Familia</h3>
-                                    <div class="location"><span>Location: </span>Calle Mallorca, 401</div>
+                                    <h3 id="title1">title1</h3>
+                                    <div  class="location"><span>Location: </span> <span id="location1">location1</span></div>
                                     <div class="rating">
                                         <span class="star active hover">☆</span>
                                         <span class="star">☆</span>
@@ -34,8 +37,8 @@
                                         <span class="star">☆</span>
                                         <span class="star">☆</span>
                                     </div>
-                                    <p class="description">
-                                        The Basílica i Temple Expiatori de la Sagrada Família, commonly known as the Sagrada Família, is a large Roman Catholic church in Barcelona, Catalonia, Spain, designed by Catalan architect Antoni Gaudí (1852–1926). Although incomplete, the church is a UNESCO World Heritage Site, and in November 2010 was consecrated and proclaimed a minor basilica by Pope Benedict XVI. It is incorrect to refer to it as a cathedral as it is not the seat of a bishop. Though construction of Sagrada Família had commenced in 1882, Gaudí became involved in 1883, taking over the project and transforming it with his architectural and engineering style—combining Gothic and curvilinear Art Nouveau forms.
+                                    <p class="description" id="description1">
+                                        description1
                                     </p>
                                 </div>                                    
                             </div>
@@ -43,10 +46,10 @@
                         <li>
                             <div class="place">
                                 <div class="photo">
-                                    <img src="images/sagrada_familia_thumb.jpg" alt="Sagrada Familia">
+                                    <img src="images/nophoto.jpg" alt="image2" id="image2" title="image2">
                                 </div><div class="content">
-                                    <h3>La Sagrada Familia II</h3>
-                                    <div class="location"><span>Location: </span>Calle Mallorca, 401</div>
+                                    <h3 id="title2">title2</h3>
+                                    <div  class="location"><span>Location: </span> <span id="location2">location2</span></div>
                                     <div class="rating">
                                         <span class="star active hover">☆</span>
                                         <span class="star">☆</span>
@@ -54,8 +57,8 @@
                                         <span class="star">☆</span>
                                         <span class="star">☆</span>
                                     </div>
-                                    <p class="description">
-                                        The Basílica i Temple Expiatori de la Sagrada Família, commonly known as the Sagrada Família, is a large Roman Catholic church in Barcelona, Catalonia, Spain, designed by Catalan architect Antoni Gaudí (1852–1926). Although incomplete, the church is a UNESCO World Heritage Site, and in November 2010 was consecrated and proclaimed a minor basilica by Pope Benedict XVI. It is incorrect to refer to it as a cathedral as it is not the seat of a bishop. Though construction of Sagrada Família had commenced in 1882, Gaudí became involved in 1883, taking over the project and transforming it with his architectural and engineering style—combining Gothic and curvilinear Art Nouveau forms.
+                                    <p id="description2" class="description">
+                                        description2
                                     </p>
                                 </div>                                    
                             </div>
@@ -63,10 +66,10 @@
                         <li>
                             <div class="place">
                                 <div class="photo">
-                                    <img src="images/sagrada_familia_thumb.jpg" alt="Sagrada Familia">
+                                    <img src="images/nophoto.jpg" alt="image3" id="image3" title="image3">
                                 </div><div class="content">
-                                    <h3>La Sagrada Familia</h3>
-                                    <div class="location"><span>Location: </span>Calle Mallorca, 401</div>
+                                    <h3 id="title3">title3</h3>
+                                    <div  class="location"><span>Location: </span> <span id="location3">location3</span></div>
                                     <div class="rating">
                                         <span class="star active hover">☆</span>
                                         <span class="star">☆</span>
@@ -74,8 +77,8 @@
                                         <span class="star">☆</span>
                                         <span class="star">☆</span>
                                     </div>
-                                    <p class="description">
-                                        The Basílica i Temple Expiatori de la Sagrada Família, commonly known as the Sagrada Família, is a large Roman Catholic church in Barcelona, Catalonia, Spain, designed by Catalan architect Antoni Gaudí (1852–1926). Although incomplete, the church is a UNESCO World Heritage Site, and in November 2010 was consecrated and proclaimed a minor basilica by Pope Benedict XVI. It is incorrect to refer to it as a cathedral as it is not the seat of a bishop. Though construction of Sagrada Família had commenced in 1882, Gaudí became involved in 1883, taking over the project and transforming it with his architectural and engineering style—combining Gothic and curvilinear Art Nouveau forms.
+                                    <p id="description3" class="description">
+                                        description3
                                     </p>
                                 </div>                                    
                             </div>
@@ -83,10 +86,10 @@
                         <li>
                             <div class="place">
                                 <div class="photo">
-                                    <img src="images/sagrada_familia_thumb.jpg" alt="Sagrada Familia">
+                                    <img src="images/nophoto.jpg" alt="image4" id="image4" title="image4">
                                 </div><div class="content">
-                                    <h3>La Sagrada Familia</h3>
-                                    <div class="location"><span>Location: </span>Calle Mallorca, 401</div>
+                                    <h3 id="title4">title4</h3>
+                                    <div  class="location"><span>Location: </span> <span id="location4">location4</span></div>
                                     <div class="rating">
                                         <span class="star active hover">☆</span>
                                         <span class="star">☆</span>
@@ -94,12 +97,13 @@
                                         <span class="star">☆</span>
                                         <span class="star">☆</span>
                                     </div>
-                                    <p class="description">
-                                        The Basílica i Temple Expiatori de la Sagrada Família, commonly known as the Sagrada Família, is a large Roman Catholic church in Barcelona, Catalonia, Spain, designed by Catalan architect Antoni Gaudí (1852–1926). Although incomplete, the church is a UNESCO World Heritage Site, and in November 2010 was consecrated and proclaimed a minor basilica by Pope Benedict XVI. It is incorrect to refer to it as a cathedral as it is not the seat of a bishop. Though construction of Sagrada Família had commenced in 1882, Gaudí became involved in 1883, taking over the project and transforming it with his architectural and engineering style—combining Gothic and curvilinear Art Nouveau forms.
+                                    <p id="description4" class="description">
+                                        description4
                                     </p>
                                 </div>                                    
                             </div>
                         </li>
+                      
                     </ul>
                 </div>
             </div>
