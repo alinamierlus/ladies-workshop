@@ -25,7 +25,7 @@
 
         var places = [];
         var jqxhr = $.ajax({
-            url:'http://localhost:1929/app/data/places.txt',
+            url: '/app/data/places.txt',
             dataType: 'json',
             async: false,
             success: function(data){
