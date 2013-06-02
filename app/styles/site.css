@@ -557,11 +557,11 @@ ul {
 }
 
 #wrapper {
-    position  : fixed;
     background: url(../images/home.jpg) no-repeat center center fixed; 
-    height    : 100%;
-    width     : 100%;
-    z-index   : -500;
+    height: 100%;
+    width: 100%;
+    z-index: -500;
+
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
@@ -593,8 +593,7 @@ ul {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    padding:5px;
-    /*background-color: yellow;*/
+    padding:5px; 
 }
 
 .photo {
@@ -605,9 +604,9 @@ ul {
     width: 9em;
 }
 
-    .photo img {
+.photo img {
         width:100%;
-    }
+    } 
 
 .content {
     display: inline-block;
