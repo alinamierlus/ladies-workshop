@@ -9,7 +9,7 @@ ul {
 
 #wrapper {
     position  : fixed;
-    background: url(/images/home.jpg) no-repeat center center fixed; 
+    background: url(../images/home.jpg) no-repeat center center fixed; 
     height    : 100%;
     width     : 100%;
     z-index   : -500;
@@ -19,8 +19,8 @@ ul {
          -o-background-size: cover;
             background-size: cover;
 
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/home.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/home.jpg', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home.jpg', sizingMethod='scale')";
 }
 
 #main-region {
@@ -60,7 +60,11 @@ ul {
 
 .place {
     background-color: rgba(255,255,255,0.9);
-    min-height      : 10em;
+    min-height: 10em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding:5px;
     /*background-color: yellow;*/
 }
 
@@ -72,6 +76,10 @@ ul {
     vertical-align: top;
     width         : 9em;
 }
+
+    .photo img {
+        width:100%;
+    }
 
 .content {
     display   : inline-block;

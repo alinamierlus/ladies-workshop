@@ -13,3 +13,12 @@ results
 
 /node_modules
 npm-debug.log
+
+bin
+ladiejs-workshop.csproj
+ladiejs-workshop.csproj.user
+obj
+web.Debug.config
+web.Release.config
+web.config
+Properties
