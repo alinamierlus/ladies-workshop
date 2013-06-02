@@ -48,7 +48,7 @@ grunt.initConfig({
         all: {
             // This'll just watch the index.html file, you could add **/*.js or **/*.css
             // to watch Javascript and CSS files too.
-            files:['app/index.html', 'app/styles/site.css'],
+            files:['app/index.html', 'app/styles/*.css', 'app/javascripts/*.js'],
             // This configures the task that will run when the file change
             tasks: ['livereload']
         }
