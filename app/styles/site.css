@@ -96,13 +96,7 @@ ul {
     width: 1.1em;
 }
 
-.hover {
-    font-size: 1.3em;
-    height: 0.764705882em;
-    line-height: 0.764705882em;
-}
-
-.active {
+.active, .selected {
     color: gold;
 }
 
