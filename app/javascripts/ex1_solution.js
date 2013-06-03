@@ -1,4 +1,6 @@
-﻿$(function(){
+﻿/*REMOVE this file*/
+
+$(function () {
 
     /* variables */
     var name;
