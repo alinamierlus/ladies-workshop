@@ -1,0 +1,1 @@
+createEntry('1', 'sagrada', 'barcelona', 'yay fun', 'sagrada_familia_thumb.jpg');

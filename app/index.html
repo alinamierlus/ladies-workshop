@@ -1,116 +1,32 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>LadieJS</title>
+  <meta charset="UTF-8">
+  <title>LadieJS</title>
 
-    <link rel="stylesheet" href="styles/site.css">
+  <link rel="stylesheet" href="styles/site.css">
 
-    <script src="./vendor/jquery/jquery-2.0.1.js"></script>
-
-    <script src="./javascripts/home.js"></script>
-    <script src="./javascripts/basics.js"></script>
-    <script src="./javascripts/functions_iterations.js"></script>
-    <script src="./javascripts/rating_system.js"></script>
-
-    <!-- isabel's exercise solution REMOVE it!-->
-    <script src="./javascripts/ex1_solution.js"></script>
+  <script src="./vendor/jquery/jquery-2.0.1.js"></script>
+  <script src="./data/places.js"></script>
+  <script src="./javascripts/home.js"></script>
+  <script src="./javascripts/basics.js"></script>
+  <script src="./javascripts/functions.js"></script>
+  <script src="./javascripts/rating_system.js"></script>
 
 </head>
 <body>
-    <div id="wrapper">
-        <div id="main-region">
-            <div id="content-region">
-            </div>
-            <div id="places-region">
-                <div id="places-list">
-                    <ul>
-                        <li>
-                            <div class="place drop-shadow curved curved-hz-2">
-                                <div class="photo">
-                                    <img src="images/nophoto.jpg" alt="image1" id="image1" title="image1">
-                                </div><div class="content">
-                                    <h3 id="title1">title1</h3>
-                                    <div  class="location"><span>Location: </span> <span id="location1">location1</span></div>
-                                    <div class="rating">
-                                        <span class="star" data-value="1">☆</span>
-                                        <span class="star" data-value="2">☆</span>
-                                        <span class="star" data-value="3">☆</span>
-                                        <span class="star" data-value="4">☆</span>
-                                        <span class="star" data-value="5">☆</span>
-                                    </div>
-                                    <p class="description" id="description1">
-                                        description1
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="place">
-                                <div class="photo">
-                                    <img src="images/nophoto.jpg" alt="image2" id="image2" title="image2">
-                                </div><div class="content">
-                                    <h3 id="title2">title2</h3>
-                                    <div  class="location"><span>Location: </span> <span id="location2">location2</span></div>
-                                    <div class="rating">
-                                        <span class="star" data-value="1">☆</span>
-                                        <span class="star" data-value="2">☆</span>
-                                        <span class="star" data-value="3">☆</span>
-                                        <span class="star" data-value="4">☆</span>
-                                        <span class="star" data-value="5">☆</span>
-                                    </div>
-                                    <p id="description2" class="description">
-                                        description2
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="place">
-                                <div class="photo">
-                                    <img src="images/nophoto.jpg" alt="image3" id="image3" title="image3">
-                                </div><div class="content">
-                                    <h3 id="title3">title3</h3>
-                                    <div  class="location"><span>Location: </span> <span id="location3">location3</span></div>
-                                    <div class="rating">
-                                        <span class="star" data-value="1">☆</span>
-                                        <span class="star" data-value="2">☆</span>
-                                        <span class="star" data-value="3">☆</span>
-                                        <span class="star" data-value="4">☆</span>
-                                        <span class="star" data-value="5">☆</span>
-                                    </div>
-                                    <p id="description3" class="description">
-                                        description3
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="place">
-                                <div class="photo">
-                                    <img src="images/nophoto.jpg" alt="image4" id="image4" title="image4">
-                                </div><div class="content">
-                                    <h3 id="title4">title4</h3>
-                                    <div  class="location"><span>Location: </span> <span id="location4">location4</span></div>
-                                    <div class="rating">
-                                        <span class="star" data-value="1">☆</span>
-                                        <span class="star" data-value="2">☆</span>
-                                        <span class="star" data-value="3">☆</span>
-                                        <span class="star" data-value="4">☆</span>
-                                        <span class="star" data-value="5">☆</span>
-                                    </div>
-                                    <p id="description4" class="description">
-                                        description4
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                      
-                    </ul>
-                </div>
-            </div>
+  <div id="wrapper">
+    <div id="main-region">
+      <div id="content-region">
+      </div>
+      <div id="places-region">
+        <div id="places-list">
+          <ul id="places">
+          </ul>
         </div>
+      </div>
     </div>
-    <script src="/javascripts/app.js"></script>
+  </div>
+  <script src="/javascripts/app.js"></script>
 </body>
 </html>
