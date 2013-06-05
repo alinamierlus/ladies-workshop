@@ -6,8 +6,8 @@ function createEntry(id, title, location, description, image) {
         '<div class="photo">' +
           '<img src="images/' + image + '" id="image-' + id + '" alt="image" title="' + title + '">' +
         '</div><div class="content">' +
-          '<h3>' + title + '</h3>' +
-          '<div id="location-' + id + '" class="location"><span>Location: </span> <span>' + location + '</span></div>' +
+          '<h3 id="title-' + id + '">' + title + '</h3>' +
+          '<div  class="location"><span>Location: </span> <span id="location-' + id + '">' + location + '</span></div>' +
           '<div id="rating-' + id + '" class="rating">' +
             '<span class="star" data-value="1">☆</span>' +
             '<span class="star" data-value="2">☆</span>' +

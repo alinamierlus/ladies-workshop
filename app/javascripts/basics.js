@@ -1,3 +1,4 @@
+
 var placesManager = (function () {
     
     /** public methods**/
@@ -39,7 +40,7 @@ var placesManager = (function () {
 
 
     /* private methods */
-    //var _allLoadedPlaces;
+    var _allLoadedPlaces;
 
     /*
      * Reads 'places.txt' file, where the place data is stored
