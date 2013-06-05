@@ -39,29 +39,29 @@ var placesManager = (function () {
 
 
     /* private methods */
-    var _allLoadedPlaces;
+    //var _allLoadedPlaces;
 
     /*
      * Reads 'places.txt' file, where the place data is stored
      * @return {place array}  All places that have the file
      */
-    var loadPlaces = function () {
+    //var loadPlaces = function () {
 
-        var places = [];
-        var jqxhr = $.ajax({
-            url: '/app/data/places.txt',
-            dataType: 'json',
-            async: false,
-            success: function (data) {
-                $.each(data, function (id, place) {
-                    places.push(place);
-                });
-            },
+    //    var places = [];
+    //    var jqxhr = $.ajax({
+    //        url: '/app/data/places.txt',
+    //        dataType: 'json',
+    //        async: false,
+    //        success: function (data) {
+    //            $.each(data, function (id, place) {
+    //                places.push(place);
+    //            });
+    //        },
 
-        });
+    //    });
 
-        return places;
-    };
+    //    return places;
+    //};
 
     /*
      * Gets all the information of the <index> place
@@ -70,7 +70,7 @@ var placesManager = (function () {
      */
     var getPlace = function (index) {
         if (!(_allLoadedPlaces || '')) {
-            _allLoadedPlaces = loadPlaces();
+            _allLoadedPlaces = places;
         }
         var selectedPlace;
 
